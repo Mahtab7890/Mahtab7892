@@ -711,7 +711,7 @@ def pilih_super():
                                                     q = json.load(data)
                                                     if 'access_token' in q:
                                                         print '\x1b[1;97m[\x1b[1;92mOK\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass6
-                                                   else:
+                                                    else:
                                                        if 'www.facebook.com' in q['error_msg']:
                                                            print '\x1b[1;97m[\x1b[1;93mCP\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass6
                                                        else:
